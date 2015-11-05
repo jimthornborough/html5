@@ -1,0 +1,105 @@
+﻿
+.background
+{
+    background-image: url(../img/backL.jpg);
+    margin: 0;
+    background-repeat:no-repeat;
+    background-position:top,left;
+    background-size: cover;
+    height: 1000px;
+}
+
+.news-grid
+{
+    padding: 25px; 
+    vertical-align:middle; 
+    text-align: center;
+}
+
+.news-grid > .row
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.news-grid > .img-circle 
+{
+    border: none;
+}
+
+.btn-link {
+  color: white;
+}
+
+.btn-link-text
+{
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 50px;
+}
+
+.btn-link-scroll
+{
+    color: white;
+    text-align: center;
+    vertical-align: bottom;
+    padding-bottom: 30px;
+}
+
+.navbar-inverse {
+  background-color: #080808;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  border-bottom: 1px solid red;
+  background-color: transparent;
+}
+
+.jumbotron
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: transparent;
+}
+.jumbotron h1, .jumbotron .h1
+{
+    border-bottom: 1;
+    border-bottom-style: solid;
+    border-bottom-color: #FF0000;
+}
+.jumbotron p
+{
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
