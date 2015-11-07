@@ -1,12 +1,13 @@
 ﻿
 .background
 {
-    background-image: url(../img/backL.jpg);
+    background-image: url(../img/background.jpg);
     margin: 0;
     background-repeat:no-repeat;
     background-position:top,left;
     background-size: cover;
     height: 1000px;
+    padding-top: 50px;
 }
 
 .news-grid
@@ -27,8 +28,57 @@
     border: none;
 }
 
+
+.list-group
+{
+    text-align: right;
+    padding-top: 100px;
+}
+a.list-group-item
+{
+    border-style: none;
+    color: white;
+    background-color: transparent;
+    margin-right: 50px;
+}
+
+
+a.list-group-item:hover, button.list-group-item:hover
+{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-style: none;
+    outline: none;
+}
+
+a.list-group-item:focus, button.list-group-item:focus
+{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-style: none dotted none none;
+    outline: none;
+    border-right-width: thick;
+    border-right-color: #FF0000;
+}
+
+
+
+
+
 .btn-link {
   color: white;
+}
+.btn-link:hover, .btn-link:focus
+{
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    border-right: 1px solid red;
 }
 
 .btn-link-text
@@ -46,23 +96,55 @@
     padding-bottom: 30px;
 }
 
-.navbar-inverse {
+
+
+
+
+.navbar {
   background-color: #080808;
   border-color: #080808;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.collapse.navbar-collapse {
+  background-color: #080808;
+  border-color: #080808;
+}
+
+.navbar-header {
+  background-color: #080808;
+  border-color: #080808;
+}
+
+.collapse.navbar-collapse .navbar-nav > li > a {
   color: white;
 }
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
+.collapse.navbar-collapse .navbar-nav > li > a:hover,
+.collapse.navbar-collapse .navbar-nav > li > a:focus {
   border-bottom: 1px solid red;
   background-color: transparent;
 }
 
+
+
+
+
+
+.navbar-inverse .navbar-brand {
+  color:Red;
+}
+
+
+
+
+
+
+
+
+
+
+
 .jumbotron
 {
-    padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 30px;
     color: inherit;
@@ -81,25 +163,14 @@
     font-weight: 200;
 }
 
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
+
+@media (max-width: 768px) {
+  .background
+{
+    display: none;
+
 }
+}
+
+
 

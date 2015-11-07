@@ -14,20 +14,42 @@
     </script>
 </head>
 <body>
-    <section id="sectionBG" class="background">   
-    <nav class="navbar navbar-inverse">
-        <div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">              
+
+
+
+
+
+    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://localhost/WebApplication1/Index.htm">Chicago</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
               <li><a href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
               <li><a href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a></li>
-              <li class="active"><a style="color:Red;" href="#">Chicago</a></li>
               <li><a href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a></li>
               <li><a href="http://www.cityofchicago.org/city/en/progs.html">Programs</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
         </div>
-      </nav>
+    </div>
+    </nav>
+
+
+
+
+    <section id="sectionBG" class="background">   
+
+
+
     <div class="row">
         <div class="col-md-6">
             <div class="jumbotron">
@@ -39,6 +61,25 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="col-md-6" id="sidebar">
+          <div class="list-group">
+            <a href="#" class="list-group-item" onclick="changeBG('business.jpg')">Business</a>
+            <a href="#" class="list-group-item" onclick="changeBG('culture.jpg')">Culture & Recreation</a>
+            <a href="#" class="list-group-item" onclick="changeBG('environment.jpg')">Environment</a>
+            <a href="#" class="list-group-item" onclick="changeBG('housing.jpg')">Housing & Development</a>
+            <a href="#" class="list-group-item" onclick="changeBG('social.jpg')">Social Services</a>
+            <a href="#" class="list-group-item" onclick="changeBG('civic.jpg')">Civic Services</a>
+            <a href="#" class="list-group-item" onclick="changeBG('education.jpg')">Education</a>
+            <a href="#" class="list-group-item" onclick="changeBG('health.jpg')">Health</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+
+
+        
+        <!-- 
+
         <div class="col-md-6">
             <div class="btn-link-text">
                 <button type="button" class="btn btn-lg btn-link" onclick="changeBG('chicago.jpg')">
@@ -71,6 +112,11 @@
                     Health</button>
             </div>
         </div>
+
+
+        -->
+
+
     </div>
 
 
@@ -81,6 +127,9 @@
     </div>
 
     </section>
+
+
+
     <section class="news-grid" id="news-grid">
     
     
